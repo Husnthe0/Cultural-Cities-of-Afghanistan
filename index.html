@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Cities of Afghanistan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Uncial+Antiqua&family=Urbanist:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Uncial+Antiqua&family=Urbanist:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/Ghazni.jpeg" alt="Street Life in Kabul" width="1300" height="400">
+    </div>
+    <header>
+        <nav class="nav-menu">
+            <ul>
+                <a href="#intro">Home</a>
+                <a href="#featured">Featured Cities</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#city">City of The Day</a>
+                <a href="#submit">Submit a City</a>
+        </nav>
+        
+        <h1>Cultural Cities of Afghanistan</h1>
+        <small>Stories, traditions, and heritage — one city at a time.</small>
+        <p>Afghanistan is home to cities shaped by <mark>centuries of history, tradition, and cultural identity</mark>. From ancient trade routes to modern streets, each city carries its own voice—expressed through food, clothing, architecture, poetry, and everyday life. These cultural elements are not just memories of the past; they continue to influence how people live, create, and connect today.
+            This website is a digital cultural showcase dedicated to highlighting the unique character of Afghan cities. Each section focuses on a city’s distinctive traditions, artistic expressions, and social values, presented through thoughtful layout and visual storytelling. The goal is not only to inform, but to preserve and appreciate the richness of Afghan heritage in a modern, accessible way.
+        </p>
+    </header>
+    <main>
+        <section id="featured">
+            <h2>Featured Cities</h2>
+            <article>
+                <img src="images/Kabul City during autumn 🍂 2025.jpeg" title="Kabul City During Autumn"    alt="Kabul City">
+                <h3>Kabul</h3>
+                <p>The capital city, known for its vibrant bazaars and historical landmarks.</p>
+            </article>
+
+            <article>
+                <img src="images/Herat historic architecture.jpeg" title="Herat Citadel" alt="Herat Citadel">
+                <h3>Herat</h3>
+                <p>Herat is known as the cultural heart of poetry, architecture, and fine arts.</p>
+            </article>
+        </section>
+        <hr>
+        <section id="gallery">
+            <h2>City Gallery</h2>
+            <p>Dive into the cultural essence of Afghanistan through its cities.</p>
+            <article>
+                <h3>Laghman</h3>
+                <img src="images/Laghman.jpeg" title="Laghman Valley" alt="Laghman Valley">
+                <p>Known for its scenic beauty and traditional craftsmanship.</p>
+            </article>
+            
+            <article>
+                <h3>Mazar-i-Sharif</h3>
+                <img src="images/Blue Mosque Mazar e Sharif.jpeg" title="Mazar-i-Sharif Blue Mosque" alt="Mazar-i-Sharif Blue Mosque">
+                <p>Famous for the stunning Blue Mosque and vibrant Nowruz celebrations.</p>
+            </article>
+
+            <article>
+                <h3>Kandahar</h3>
+                <img src="images/Kandahar Afghanistan traditional city.jpeg" title="Kandahar Historic Architecture" alt="Kandahar Historic Architecture">
+                <p>Known for its ancient ruins,traditional Pashtun culture, and historical significance along the Silk Road.</p>
+            </article>
+
+            <article>
+                <h3>Bamyan</h3>
+                <img src="images/“Bamyan Afghanistan landscape wide.jpeg" title="Bamyan Ancient Ruins" alt="Bamyan Ancient Ruins">
+                <p>Recognized for its peaceful valleys and ancient Buddhist heritage.</p>
+            </article>
+
+            <article>
+                <h3>Jalalabad</h3>
+                <img src="images/JalalAbad.jpeg" title="Jalalabad Scenic View" alt="Jalalabad Scenic View">
+                <p>Popular for its warm climate and citrus fruits.</p>
+            </article>
+
+            <article>
+                <h3>Ghazni</h3>
+                <img src="images/Ghazni.jpeg" title="Ghazni Historic Architecture" alt="Ghazni Historic Architecture">
+                <p>A historic center of Islamic learning and architecture.</p>
+            </article>
+
+            <article>
+                <h3>Kunar</h3>
+                <img src="images/Kunar.jpeg" title="Kunar Valley" alt="Kunar Valley">
+                <p>Known for its lush green valleys and rich biodiversity.</p>
+            </article>
+
+            <article>
+                <h3>Nuristan</h3>
+                <img src="images/Nuristan (1).jpeg" title="Nuristan Mountains" alt="Nuristan Mountains">
+                <p>Known for its mountainous landscapes and unique cultural traditions.</p>
+            </article>
+        </section>
+        <hr>
+        <section id="city">
+            <h2>City of The Day</h2>
+            <div class="city-of-theday">
+            <!-- I have inseted the image via css as the background --><h4>Kabul Night</sh4>
+            </div>
+            <h3>Kabul</h3>
+            <ul>
+                <h4>Highlights:</h4>
+                <li>Political and cultural capital of Afghanistan</li>  
+                <li>Historic bazaars, mosques, gardens, and old city neighborhoods</li>
+                <li>Center of education, literature, art, and modern urban life</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="submit">
+            <h2>Share a City You Love</h2>
+            <p>Help celebrate Afghan culture by sharing a city and its traditions.</p>
+            <form action="/submit-city" method="post">
+
+                <label for="your-name">Your Name:</label><br>
+                <input type="text" id="your-name" name="your-name" required placeholder="Full Name"><br><br>
+
+                <label for="city-name">City Name:</label><br>
+                <input type="text" id="city-name" name="city-name" required placeholder="e.g; Herat"><br><br>
+
+                <label for="city-description">Description:</label><br>
+                <textarea name="city-description" rows="4" cols="50" required placeholder="Details of the city..."></textarea><br><br>
+
+                <label for="city-image">Image URL:</label><br>
+                <input type="url" id="city-image" name="city-image" required placeholder="City Image URL"><br><br>
+
+                <button type="submit">Submit City</button>
+        </section>
+    </main>
+    <footer>
+        <p>Created by Hasina Hazraty, CMS & Web Design — Cultural Showcase Project</p>
+        <small>Preserving culture through design and creativity.</small>
+        <p>© 2026 Hasina Hazraty. All rights reserved.</p>
+    </footer>
+</body>
+</html>

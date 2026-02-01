@@ -1,0 +1,371 @@
+body {
+    background: smooth white;
+    margin: 0;
+}
+div img {
+    width: 99vw;
+    height: 50vh;
+}
+div {
+    transition: all 1s ease;
+}
+div:hover   {
+    transform: scale(1.01);
+}
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6, label {
+    font-family: 'Urbanist', sans-serif;
+    color: #2E4053;
+    font-weight: normal;
+}
+small, p, li, a, caption  {
+    font-family: 'Noto Sans', sans-serif;
+}
+h1, h2 {
+    text-align: center;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 10;
+    font-weight: normal;
+    position: absolute;
+    top: 0px;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    color: rgb(174, 224, 249);
+    font-weight: bold;
+    text-decoration: underline;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Urbanist', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+header small    {
+    color: #707070;
+    transition: all 0.8s ease;
+}
+header:hover    small{
+    color: #13120b;
+}
+header p {
+    margin: 0;
+    color: rgb(54, 54, 54);
+    margin-top: 30px;
+    font-weight: normal;
+    margin-bottom: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+}
+header mark {
+    background-color: rgb(255, 235, 59);
+    padding: 0 5px;
+    border-radius: 3px;
+    color: #363636;
+}
+header  h1  {
+    font-size: 35px;
+    margin: 0;  
+    font-weight: normal;
+    margin-top: 30px;
+}
+header  small   {
+    margin-bottom: 40px;
+}
+
+#featured {
+    max-width: 1100px;
+    margin: 50px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+#featured > h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    flex-basis: 100%;
+}
+
+#featured article {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#featured article img {
+    width: 90%;
+    height: 300px;
+    border-radius: 15px;
+    transition: all 0.8s ease;
+}
+#featured article img:hover {
+    transform: scale(1.02);
+    box-shadow: inset rgba(0, 0, 0, 0.45);
+    
+}
+
+#featured article h3 {
+    margin-left: 15px;
+}
+
+#featured article p {
+    margin-top: -15px;
+    margin-left: 15px;
+    color: #5f5f5f;
+    line-height: 1.6;
+}
+
+#gallery {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    scroll-behavior: smooth;
+    margin-bottom: 80px;
+    margin-top: -10px;
+}
+
+#gallery > h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    width: 100%;
+}
+
+#gallery > p {
+    margin-bottom: 1rem;
+    color: #666;
+    display: block;
+    width: 100%;
+}
+
+#gallery {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+}
+
+#gallery article {
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    margin-right: 1.5rem;
+    white-space: normal;
+}
+
+#gallery, #gallery article, #gallery article img {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#gallery {
+    position: relative;
+}
+
+#gallery > h2, #gallery > p {
+    position: sticky;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#gallery article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+
+#gallery article h3 {
+    font-size: 1.1rem;
+    margin-top: 0.75rem;
+    color: #004b84;
+}
+
+#gallery article p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+#gallery::-webkit-scrollbar {
+    height: 6px;
+    display: none;
+}
+
+
+#city {
+    color: #5f5f5f;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.city-of-theday {
+    width: 99vw;
+    height: 70vh;
+    background-image: url(images/Afghanistan\ city\ night\ lights.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease;
+}
+.city-of-theday > h4 {
+    visibility: hidden;
+    opacity: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 1rem;
+    transition: all 0.8s ease;
+}
+.city-of-theday:hover  {
+    visibility: visible;
+    transform: scale(1.01);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.619);
+}
+
+.city-of-theday:hover > h4 {
+    visibility: visible;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.5rem;
+    opacity: 1;
+    color: rgb(255, 252, 178);
+
+}
+
+#city p {
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 1.6;
+    font-size: 18px;
+
+}
+
+#city li{
+    color: #5f5f5f;
+    list-style-type: disc;
+    margin-left: 60px;
+}
+#city h2    {
+    text-align: center;
+    margin-bottom: 45px;
+}
+#city h3 {
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    font-size: 35px;
+}
+
+hr  {
+    margin-left: 300px;
+    margin-right: 300px;
+    color:#caf7e8;
+}
+#submit  {
+    padding: 80px;
+    background:#ffffff;
+    transition: all 1s ease;
+}
+#submit:hover   {
+    background: #EBF0FA;
+    transform: scale(1.01);
+}
+#submit form {
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#submit p {
+    margin-left: 150px;
+}
+form input, textarea  {
+    border-radius: 15px;
+    border-style: none;
+    padding: 10px;
+    box-shadow: inset 0 0 1px rgb(0, 0, 0);
+    font-family: 'Noto Sans', sans-serif;
+    max-width: fit-content;
+    resize: vertical;
+}
+textarea {
+    resize: vertical;
+    width: 300px;
+    height: 100px;
+}
+input {
+    width: max-content;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 17px;
+    border-color:#38709a;
+}
+button {
+    background: #ffffff;
+    text-align: center;
+    padding:10px;
+    width: 30%;
+    margin-left: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-style: none;
+    box-shadow: inset 0 0 1px rgb(0, 0, 0);
+    font-family: 'Noto Sans', sans-serif;
+    transition: all 0.3s ease;
+}
+button:hover    {
+    background: rgba(53, 151, 199, 0.566);
+    transform: scale(1.01);
+    color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    
+}
+footer  {
+    background: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Noto Sans', sans-serif;
+}
+footer p {
+    margin:auto;
+    color: #777;
+    font-family: 'Noto Sans', sans-serif;
+}
+footer small {
+    color: #777;
+    font-family: 'Noto Sans', sans-serif;
+}
