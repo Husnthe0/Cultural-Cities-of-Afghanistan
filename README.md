@@ -1,10 +1,3 @@
-Good — this is exactly where most student projects look amateur. A **clean, structured README** immediately makes your project feel professional, even if the code is simple.
-
-Below is a **ready-to-use GitHub README**, written **specifically for your project** (Afghan cultural cities, HTML/CSS, gallery, featured section, city of the day, submission form).
-You can **copy–paste this directly** into `README.md`.
-
----
-
 # Cultural Cities of Afghanistan 🌍
 
 A static web project that showcases the cultural identity, history, and traditions of Afghan cities through clean semantic HTML and modern CSS layout techniques.
@@ -122,7 +115,7 @@ It is both an **educational project** and a **creative cultural showcase**.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   https://husnthe0.github.io/Cultural-Cities-of-Afghanistan/
    ```
 
 2. Open `index.html` in your browser
